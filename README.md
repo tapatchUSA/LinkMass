@@ -49,7 +49,7 @@ Runs the full operation logic but touches nothing on disk. Every planned action 
 - The installer comes in the same 10 languages
 - The Terms of Service are shown translated for convenience, with the official English (US) text, the only binding version, right below
 
-Release notes for every version are on the [Releases](https://github.com/tapatchUSA/LinkMass/releases) page.
+Release notes for every version are on the [Releases](https://github.com/tapatchUSA/LinkMass/releases) page and in [release-notes/](release-notes/).
 
 ## Install
 
