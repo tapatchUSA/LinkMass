@@ -2,7 +2,7 @@
 <h1 align="center">LinkMass</h1>
 <p align="center"><b>Shrink your drive. Zero wasted space.</b></p>
 <p align="center">Storage Optimizer · Windows 10/11 · x64 · ~4 MB · Free for personal use</p>
-<p align="center"><a href="https://github.com/tapatchUSA/LinkMass/releases/latest"><b>⬇ Download LinkMass 1.0.3</b></a> &nbsp;·&nbsp; <a href="https://tapatch.com/tools/linkmass/">tapatch.com/tools/linkmass</a></p>
+<p align="center"><a href="https://github.com/tapatchUSA/LinkMass/releases/latest"><b>⬇ Download LinkMass 1.0.4</b></a> &nbsp;·&nbsp; <a href="https://tapatch.com/tools/linkmass/">tapatch.com/tools/linkmass</a></p>
 
 <p align="center">
 <img src="screenshots/linkmass.png" alt="LinkMass">
@@ -42,18 +42,16 @@ Runs the full operation logic but touches nothing on disk. Every planned action 
 
 - Hard links only work within the same drive volume. Directories cannot be hard-linked — LinkMass recreates the folder structure and links each file individually. Requires NTFS. FAT32 and exFAT are not supported.
 
-## What's new in 1.0.3
+## What's new in 1.0.4
 
-- Now in 10 languages: English, Chinese (Simplified), Russian, Spanish, Portuguese, German, Japanese, French, Polish and Korean
-- Starts in your Windows language (English if yours isn't one of the 10). The first launch asks which language you want, and you can switch any time inside the app
-- The installer comes in the same 10 languages
-- The Terms of Service are shown translated for convenience, with the official English (US) text, the only binding version, right below
+- Now runs on any Windows 10 or 11 PC, even a fresh install: it no longer needs the Microsoft Visual C++ Redistributable (no more "VCRUNTIME140.dll was not found")
+- Nothing else changed
 
 Release notes for every version are on the [Releases](https://github.com/tapatchUSA/LinkMass/releases) page and in [release-notes/](release-notes/).
 
 ## Install
 
-1. Download **LinkMass-Setup-1.0.3.exe** from the [latest release](https://github.com/tapatchUSA/LinkMass/releases/latest) or from [tapatch.com](https://tapatch.com/tools/linkmass/).
+1. Download **LinkMass-Setup-1.0.4.exe** from the [latest release](https://github.com/tapatchUSA/LinkMass/releases/latest) or from [tapatch.com](https://tapatch.com/tools/linkmass/).
 2. Run it. The installer and the app come in 10 languages.
 3. Accept the Terms of Service on first launch.
 
@@ -70,6 +68,7 @@ scoop install tapatch/linkmass
 
 | Version | Released | Installer | VirusTotal | SHA-256 |
 |---|---|---|---|---|
+| [1.0.4](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.4) | 2026-10-17 | [LinkMass-Setup-1.0.4.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.4/LinkMass-Setup-1.0.4.exe) | [1 / 71](https://www.virustotal.com/gui/file/5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa/detection) | `5deeacaf4e475520…` |
 | [1.0.3](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.3) | 2026-10-01 | [LinkMass-Setup-1.0.3.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.3/LinkMass-Setup-1.0.3.exe) | [1 / 70](https://www.virustotal.com/gui/file/b072a6049b5a7968609924cdf35f05ae3931102067cddc8eea6e4ef8aa6dbbbd/detection) | `b072a6049b5a7968…` |
 | [1.0.2](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.2) | 2026-09-30 | [LinkMass-Setup-1.0.2.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.2/LinkMass-Setup-1.0.2.exe) | [1 / 71](https://www.virustotal.com/gui/file/cad234e48690c41fca683a0f0aaf79a5ff23ef88bd0ae9c1480e9214e0132113/detection) | `cad234e48690c41f…` |
 | [1.0.1](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.1) | 2026-04-24 | [LinkMass-Setup-1.0.1.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.1/LinkMass-Setup-1.0.1.exe) | [1 / 70](https://www.virustotal.com/gui/file/7147e94b1a113ae7b32f5ff1fb35bd0361f01ccdac315d352baf76ecda488eb8/detection) | `7147e94b1a113ae7…` |
@@ -77,11 +76,11 @@ scoop install tapatch/linkmass
 
 ## Security
 
-Every installer is scanned on VirusTotal before release. LinkMass 1.0.3: **1 / 70** engines flag it · [view report](https://www.virustotal.com/gui/file/b072a6049b5a7968609924cdf35f05ae3931102067cddc8eea6e4ef8aa6dbbbd/detection)
+Every installer is scanned on VirusTotal before release. LinkMass 1.0.4: **1 / 71** engines flag it · [view report](https://www.virustotal.com/gui/file/5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa/detection)
 
 **SHA-256**
 ```
-b072a6049b5a7968609924cdf35f05ae3931102067cddc8eea6e4ef8aa6dbbbd
+5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa
 ```
 
 ## Built with
