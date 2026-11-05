@@ -2,7 +2,7 @@
 <h1 align="center">LinkMass</h1>
 <p align="center"><b>Shrink your drive. Zero wasted space.</b></p>
 <p align="center">Storage Optimizer · Windows 10/11 · x64 · ~4 MB · Free for personal use</p>
-<p align="center"><a href="https://github.com/tapatchUSA/LinkMass/releases/latest"><b>⬇ Download LinkMass 1.0.4</b></a> &nbsp;·&nbsp; <a href="https://tapatch.com/tools/linkmass/">tapatch.com/tools/linkmass</a></p>
+<p align="center"><a href="https://github.com/tapatchUSA/LinkMass/releases/latest"><b>⬇ Download LinkMass 1.0.5</b></a> &nbsp;·&nbsp; <a href="https://tapatch.com/tools/linkmass/">tapatch.com/tools/linkmass</a></p>
 
 <p align="center">
 <img src="screenshots/linkmass.png" alt="LinkMass">
@@ -42,16 +42,22 @@ Runs the full operation logic but touches nothing on disk. Every planned action 
 
 - Hard links only work within the same drive volume. Directories cannot be hard-linked — LinkMass recreates the folder structure and links each file individually. Requires NTFS. FAT32 and exFAT are not supported.
 
-## What's new in 1.0.4
+## What's new in 1.0.5
 
-- Now runs on any Windows 10 or 11 PC, even a fresh install: it no longer needs the Microsoft Visual C++ Redistributable (no more "VCRUNTIME140.dll was not found")
-- Nothing else changed
+- Background pictures and GIFs: add as many as you like in Settings, tick the ones to show (or Select all), and the ticked ones take turns
+- Sliders set how strong the picture is and how see-through the panels are; turn it off any time
+- "Overwrite if file already exists" makes the new link first and only then replaces the old file, so a failed link can't lose a file; files already linked are left alone
+- Unlink never leaves a file missing, and the scanner skips files that changed since the scan
+- Linking into a folder inside the source is refused with a clear message, and folder shortcuts are skipped, so it can't loop forever
+- The review step no longer freezes on big folders, and the Small / Medium / Large start-up sizes stick
+- Settings are saved safely (a crash mid-save can't wipe them), and it no longer redraws while idle
+- The installer's license text matches the current Terms, and THIRD-PARTY-NOTICES.txt lists the open-source parts it uses
 
 Release notes for every version are on the [Releases](https://github.com/tapatchUSA/LinkMass/releases) page and in [release-notes/](release-notes/).
 
 ## Install
 
-1. Download **LinkMass-Setup-1.0.4.exe** from the [latest release](https://github.com/tapatchUSA/LinkMass/releases/latest) or from [tapatch.com](https://tapatch.com/tools/linkmass/).
+1. Download **LinkMass-Setup-1.0.5.exe** from the [latest release](https://github.com/tapatchUSA/LinkMass/releases/latest) or from [tapatch.com](https://tapatch.com/tools/linkmass/).
 2. Run it. The installer and the app come in 10 languages.
 3. Accept the Terms of Service on first launch.
 
@@ -68,19 +74,20 @@ scoop install tapatch/linkmass
 
 | Version | Released | Installer | VirusTotal | SHA-256 |
 |---|---|---|---|---|
-| [1.0.4](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.4) | 2026-10-17 | [LinkMass-Setup-1.0.4.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.4/LinkMass-Setup-1.0.4.exe) | [1 / 71](https://www.virustotal.com/gui/file/5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa/detection) | `5deeacaf4e475520…` |
-| [1.0.3](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.3) | 2026-10-01 | [LinkMass-Setup-1.0.3.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.3/LinkMass-Setup-1.0.3.exe) | [1 / 70](https://www.virustotal.com/gui/file/b072a6049b5a7968609924cdf35f05ae3931102067cddc8eea6e4ef8aa6dbbbd/detection) | `b072a6049b5a7968…` |
-| [1.0.2](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.2) | 2026-09-30 | [LinkMass-Setup-1.0.2.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.2/LinkMass-Setup-1.0.2.exe) | [1 / 71](https://www.virustotal.com/gui/file/cad234e48690c41fca683a0f0aaf79a5ff23ef88bd0ae9c1480e9214e0132113/detection) | `cad234e48690c41f…` |
-| [1.0.1](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.1) | 2026-04-24 | [LinkMass-Setup-1.0.1.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.1/LinkMass-Setup-1.0.1.exe) | [1 / 70](https://www.virustotal.com/gui/file/7147e94b1a113ae7b32f5ff1fb35bd0361f01ccdac315d352baf76ecda488eb8/detection) | `7147e94b1a113ae7…` |
-| [1.0.0](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.0) | 2026-04-11 | [LinkMass-Setup-1.0.0.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.0/LinkMass-Setup-1.0.0.exe) | [1 / 72](https://www.virustotal.com/gui/file/5c1dacb4f2d46d275cc8ebf86ebc2affcff42be4e9aab9402ceca6692ed96153/detection) | `5c1dacb4f2d46d27…` |
+| [1.0.5](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.5) | 2026-11-04 | [LinkMass-Setup-1.0.5.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.5/LinkMass-Setup-1.0.5.exe) | [1 / 71](https://www.virustotal.com/gui/file/a803ae4d9cbc90771939550aef099aca526220e9c3306a9a23046215684b6fca/detection) | `a803ae4d9cbc9077…` |
+| [1.0.4](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.4) | 2026-10-17 | [LinkMass-Setup-1.0.4.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.4/LinkMass-Setup-1.0.4.exe) | [0 / 70](https://www.virustotal.com/gui/file/5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa/detection) | `5deeacaf4e475520…` |
+| [1.0.3](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.3) | 2026-10-01 | [LinkMass-Setup-1.0.3.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.3/LinkMass-Setup-1.0.3.exe) | [0 / 71](https://www.virustotal.com/gui/file/b072a6049b5a7968609924cdf35f05ae3931102067cddc8eea6e4ef8aa6dbbbd/detection) | `b072a6049b5a7968…` |
+| [1.0.2](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.2) | 2026-09-30 | [LinkMass-Setup-1.0.2.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.2/LinkMass-Setup-1.0.2.exe) | [0 / 71](https://www.virustotal.com/gui/file/cad234e48690c41fca683a0f0aaf79a5ff23ef88bd0ae9c1480e9214e0132113/detection) | `cad234e48690c41f…` |
+| [1.0.1](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.1) | 2026-04-24 | [LinkMass-Setup-1.0.1.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.1/LinkMass-Setup-1.0.1.exe) | [0 / 71](https://www.virustotal.com/gui/file/7147e94b1a113ae7b32f5ff1fb35bd0361f01ccdac315d352baf76ecda488eb8/detection) | `7147e94b1a113ae7…` |
+| [1.0.0](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.0) | 2026-04-11 | [LinkMass-Setup-1.0.0.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.0/LinkMass-Setup-1.0.0.exe) | [0 / 71](https://www.virustotal.com/gui/file/5c1dacb4f2d46d275cc8ebf86ebc2affcff42be4e9aab9402ceca6692ed96153/detection) | `5c1dacb4f2d46d27…` |
 
 ## Security
 
-Every installer is scanned on VirusTotal before release. LinkMass 1.0.4: **1 / 71** engines flag it · [view report](https://www.virustotal.com/gui/file/5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa/detection)
+Every installer is scanned on VirusTotal before release. LinkMass 1.0.5: **1 / 71** engines flag it · [view report](https://www.virustotal.com/gui/file/a803ae4d9cbc90771939550aef099aca526220e9c3306a9a23046215684b6fca/detection)
 
 **SHA-256**
 ```
-5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa
+a803ae4d9cbc90771939550aef099aca526220e9c3306a9a23046215684b6fca
 ```
 
 ## Built with
