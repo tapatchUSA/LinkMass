@@ -14,8 +14,6 @@
 
 LinkMass is the hard link manager Windows never built in. Create links, hunt duplicates, scan folder trees, and break links safely — all from a polished, theme-able GUI. No command line required. Works entirely locally with no network access.
 
-[![Watch on YouTube](https://img.youtube.com/vi/lGmgFCfLwrQ/hqdefault.jpg)](https://www.youtube.com/watch?v=lGmgFCfLwrQ)
-
 ## Features
 
 Loaded with custom-built functionality. Too much to put on a page — here are the main ones.
@@ -74,7 +72,7 @@ scoop install tapatch/linkmass
 
 | Version | Released | Installer | VirusTotal | SHA-256 |
 |---|---|---|---|---|
-| [1.0.5](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.5) | 2026-11-04 | [LinkMass-Setup-1.0.5.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.5/LinkMass-Setup-1.0.5.exe) | [1 / 71](https://www.virustotal.com/gui/file/a803ae4d9cbc90771939550aef099aca526220e9c3306a9a23046215684b6fca/detection) | `a803ae4d9cbc9077…` |
+| [1.0.5](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.5) | 2026-11-05 | [LinkMass-Setup-1.0.5.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.5/LinkMass-Setup-1.0.5.exe) | [1 / 71](https://www.virustotal.com/gui/file/a803ae4d9cbc90771939550aef099aca526220e9c3306a9a23046215684b6fca/detection) | `a803ae4d9cbc9077…` |
 | [1.0.4](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.4) | 2026-10-17 | [LinkMass-Setup-1.0.4.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.4/LinkMass-Setup-1.0.4.exe) | [0 / 70](https://www.virustotal.com/gui/file/5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa/detection) | `5deeacaf4e475520…` |
 | [1.0.3](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.3) | 2026-10-01 | [LinkMass-Setup-1.0.3.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.3/LinkMass-Setup-1.0.3.exe) | [0 / 71](https://www.virustotal.com/gui/file/b072a6049b5a7968609924cdf35f05ae3931102067cddc8eea6e4ef8aa6dbbbd/detection) | `b072a6049b5a7968…` |
 | [1.0.2](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.2) | 2026-09-30 | [LinkMass-Setup-1.0.2.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.2/LinkMass-Setup-1.0.2.exe) | [0 / 71](https://www.virustotal.com/gui/file/cad234e48690c41fca683a0f0aaf79a5ff23ef88bd0ae9c1480e9214e0132113/detection) | `cad234e48690c41f…` |
