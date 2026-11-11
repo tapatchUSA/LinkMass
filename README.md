@@ -2,7 +2,7 @@
 <h1 align="center">LinkMass</h1>
 <p align="center"><b>Shrink your drive. Zero wasted space.</b></p>
 <p align="center">Storage Optimizer · Windows 10/11 · x64 · ~4 MB · Free for personal use</p>
-<p align="center"><a href="https://github.com/tapatchUSA/LinkMass/releases/latest"><b>⬇ Download LinkMass 1.0.6</b></a> &nbsp;·&nbsp; <a href="https://tapatch.com/tools/linkmass/">tapatch.com/tools/linkmass</a></p>
+<p align="center"><a href="https://github.com/tapatchUSA/LinkMass/releases/latest"><b>⬇ Download LinkMass 1.0.7</b></a> &nbsp;·&nbsp; <a href="https://tapatch.com/tools/linkmass/">tapatch.com/tools/linkmass</a></p>
 
 <p align="center">
 <img src="screenshots/linkmass.png" alt="LinkMass">
@@ -40,15 +40,16 @@ Runs the full operation logic but touches nothing on disk. Every planned action 
 
 - Hard links only work within the same drive volume. Directories cannot be hard-linked — LinkMass recreates the folder structure and links each file individually. Requires NTFS. FAT32 and exFAT are not supported.
 
-## What's new in 1.0.6
+## What's new in 1.0.7
 
-- Arrows, check marks and other symbols no longer show as empty boxes
+- Now opens in virtual machines, Remote Desktop and on PCs without a graphics driver: it switches to Direct3D 12 when OpenGL doesn't work
+- If the window still can't open, a message says why instead of the app closing without a word
 
 Release notes for every version are on the [Releases](https://github.com/tapatchUSA/LinkMass/releases) page and in [release-notes/](release-notes/).
 
 ## Install
 
-1. Download **LinkMass-Setup-1.0.6.exe** from the [latest release](https://github.com/tapatchUSA/LinkMass/releases/latest) or from [tapatch.com](https://tapatch.com/tools/linkmass/).
+1. Download **LinkMass-Setup-1.0.7.exe** from the [latest release](https://github.com/tapatchUSA/LinkMass/releases/latest) or from [tapatch.com](https://tapatch.com/tools/linkmass/).
 2. Run it. The installer and the app come in 10 languages.
 3. Accept the Terms of Service on first launch.
 
@@ -65,6 +66,7 @@ scoop install tapatch/linkmass
 
 | Version | Released | Installer | VirusTotal | SHA-256 |
 |---|---|---|---|---|
+| [1.0.7](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.7) | 2026-11-11 | [LinkMass-Setup-1.0.7.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.7/LinkMass-Setup-1.0.7.exe) | [1 / 70](https://www.virustotal.com/gui/file/5461251664ae10b240c530f6bf5a08dc6fa892435c98acebad3f6d8f31b9760c/detection) | `5461251664ae10b2…` |
 | [1.0.6](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.6) | 2026-11-07 | [LinkMass-Setup-1.0.6.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.6/LinkMass-Setup-1.0.6.exe) | [1 / 70](https://www.virustotal.com/gui/file/023bd4755c5ec0296074fb3e5ab6adf5ef7f6ba9ea9edae028ce5c230d0f00ff/detection) | `023bd4755c5ec029…` |
 | [1.0.5](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.5) | 2026-11-05 | [LinkMass-Setup-1.0.5.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.5/LinkMass-Setup-1.0.5.exe) | [1 / 71](https://www.virustotal.com/gui/file/a803ae4d9cbc90771939550aef099aca526220e9c3306a9a23046215684b6fca/detection) | `a803ae4d9cbc9077…` |
 | [1.0.4](https://github.com/tapatchUSA/LinkMass/releases/tag/v1.0.4) | 2026-10-17 | [LinkMass-Setup-1.0.4.exe](https://github.com/tapatchUSA/LinkMass/releases/download/v1.0.4/LinkMass-Setup-1.0.4.exe) | [0 / 70](https://www.virustotal.com/gui/file/5deeacaf4e47552093b6ea2b48f2f8a9d8269972d4bec19f1feb94f58e5ff2fa/detection) | `5deeacaf4e475520…` |
@@ -75,11 +77,11 @@ scoop install tapatch/linkmass
 
 ## Security
 
-Every installer is scanned on VirusTotal before release. LinkMass 1.0.6: **1 / 70** engines flag it · [view report](https://www.virustotal.com/gui/file/023bd4755c5ec0296074fb3e5ab6adf5ef7f6ba9ea9edae028ce5c230d0f00ff/detection)
+Every installer is scanned on VirusTotal before release. LinkMass 1.0.7: **1 / 70** engines flag it · [view report](https://www.virustotal.com/gui/file/5461251664ae10b240c530f6bf5a08dc6fa892435c98acebad3f6d8f31b9760c/detection)
 
 **SHA-256**
 ```
-023bd4755c5ec0296074fb3e5ab6adf5ef7f6ba9ea9edae028ce5c230d0f00ff
+5461251664ae10b240c530f6bf5a08dc6fa892435c98acebad3f6d8f31b9760c
 ```
 
 ## Built with
